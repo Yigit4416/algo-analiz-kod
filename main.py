@@ -12,14 +12,14 @@ if __name__ == '__main__':
 
     print("Dijkstra Shortest Path:")
     dijkstra_start = time.time()
-    shortest_time, shortest_path = graph.get_shortest_path_dijkstra('A', 'G')
+    shortest_time, shortest_path = graph.get_shortest_path_dijkstra('A', 'Y')
     dijkstra_end = time.time()
     print(f"Shortest time: {shortest_time}")
     print(f"Shortest path: {' -> '.join(shortest_path)}")
     print(f"Dijkstra execution time: {dijkstra_end - dijkstra_start} seconds")
 
     print("\nContraction Hierarchies Shortest Path:")
-    shortest_time, shortest_path = graph.get_shortest_path_CH('A', 'G')
+    shortest_time, shortest_path = graph.get_shortest_path_CH('A', 'Y')
     print(f"Shortest time: {shortest_time}")
     print(f"Shortest path: {' -> '.join(shortest_path)}")
 
